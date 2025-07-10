@@ -5,8 +5,8 @@
 </template>
 
 <script setup lang="ts">
-const str = "我爱你祖国";
-console.log(str);
+const str = '我爱你祖国'
+console.log(str)
 </script>
 
 <style scoped lang="scss">

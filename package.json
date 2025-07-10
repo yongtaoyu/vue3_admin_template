@@ -12,13 +12,17 @@
     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
     "lint:eslint": "eslint src/**/*.{ts,vue} --cache --fix",
     "lint:style": "stylelint src/**/*.{css,scss,vue} --cache --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "commitlint": "commitlint --config commitlint.config.mjs -e -V",
+    "preinstall": "node ./scripts/preinstall.js"
   },
   "dependencies": {
     "vue": "^3.5.17"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.28.0",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "latest",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/tsconfig": "^0.7.0",
