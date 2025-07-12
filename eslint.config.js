@@ -23,6 +23,7 @@ export default defineConfig([
   },
   {
     rules: {
+      'vue/multi-word-component-names': 'off',
       'no-undef': 'off',
       // eslint（https://eslint.bootcss.com/docs/rules/）
       'no-var': 'error', // 要求使用 let 或 const 而不是 var
@@ -31,6 +32,8 @@ export default defineConfig([
       'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
       'no-unexpected-multiline': 'error', // 禁止空余的多行
       'no-useless-escape': 'off', // 禁止不必要的转义字符
+      '@typescript-eslint/ban-ts-comment': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
     },
   },
 

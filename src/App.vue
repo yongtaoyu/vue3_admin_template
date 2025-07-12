@@ -1,18 +1,22 @@
 <template>
   <div class="box">
-    <h1>我是APP</h1>
+    <div>
+      <h1>我是APP</h1>
+    </div>
   </div>
 </template>
 
-<script setup lang="ts">
-const str = '我爱你祖国'
-console.log(str)
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 .box {
-  width: 600px;
+  width: 100%;
   height: 400px;
-  background-color: black;
+  background-color: variable.$color;
+  div {
+    width: 100%;
+    height: 100px;
+    background-color: skyblue;
+  }
 }
 </style>
